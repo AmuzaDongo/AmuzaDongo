@@ -1,0 +1,116 @@
+.addproject{
+    background: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    top: 20px;
+    padding: 50px;
+    z-index: 9999;
+}
+
+.addcontainer{
+    padding: 0 2rem !important;
+}
+.add-card{
+    width: 80%;
+    background-color: #EAEDFF;
+    margin: auto auto;
+    border: none !important;
+    border-radius: 1rem !important;
+}
+
+.add-title{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    padding: 15px 15px;
+}
+
+.add-title h4{
+    font-family: 'varela',sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.add-title .btn{
+    float: right;
+    position: absolute;
+    right: 0px;
+    bottom: 15px;
+    color: #6A29E5;
+}
+
+.add-body{
+    display: flex;
+    flex-direction: column;
+}
+
+.add-form{
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+}
+
+.add-form .fg{
+    width: 50%;
+    padding: 15px;
+}
+
+.add-form .fg .label,
+.add-form .fgtextarea .level{
+    font-size: 15px;
+    font-weight: 400;
+    font-family: 'verela', sans-serif;
+}
+
+.add-form .fg input{
+    width: 100%;
+    border: 1px solid #CED4DA;
+    height: 2.2rem;
+    padding: 0 10px;
+    border-radius: 5px;
+}
+
+.add-form .fgfile{
+    width: 100%;
+    padding: 15px;
+}
+
+.add-form .fgfile svg{
+    background-color: #EAEDFF;
+    font-size: 3rem;
+    padding: 10px;
+    border-radius: 3rem;
+}
+
+.add-form .fgtextarea{
+    width: 100%;
+    padding: 15px;
+}
+
+.add-form .fgtextarea textarea{
+    width: 100%;
+    border: 1px solid #CED4DA;
+    padding: 0 10px;
+    border-radius: 5px;
+}
+
+.btng{
+    display: flex;
+    gap: 1rem;
+    padding: 15px 25px;
+    margin-bottom: 2rem;
+}
+
+.btng button{
+    border-radius: 1rem;
+    padding: 5px 18px;
+    border: none;
+    background-color: #6A29E5;
+    color: #fff;
+    font-size: 14px;
+    font-family: 'varela', sans-serif;
+    font-weight: 400;
+}
+
+.btng button:last-child{
+    background-color: #00ACED;
+}

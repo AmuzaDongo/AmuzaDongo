@@ -1,0 +1,9 @@
+.portfolio{
+    display: block;
+}
+
+.main-portfolio{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}

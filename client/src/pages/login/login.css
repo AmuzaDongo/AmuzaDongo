@@ -1,0 +1,80 @@
+.login{
+    top: 20%;
+    right: 20px;
+    position: absolute;
+    z-index: 999;
+}
+
+.login .login-bg {
+    background-color: #fff;
+    margin: 20px 20;
+    border-radius: 1rem;
+    float: right;
+    width: 350px;
+    height: calc(50vh);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+}
+
+.loginTitle{
+    font-size: 30px;
+    font-weight: bold;
+    color: #000;
+}
+
+.loginForm{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.loginForm>label{
+    margin: 8px 0;
+    font-size: 18px;
+    color: rgb(20, 20, 20);
+}
+
+.loginInput{
+    border: 1px solid #CED4DA;
+    padding: 5px 5px;
+    border-radius: 5px;
+}
+
+.loginButton{
+    margin-top: 10px;
+    cursor: pointer;
+    background-color: #00ACED;
+    border: none;
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.loginButton:disabled{
+    cursor: not-allowed;
+    background-color: #2a83a3;
+}
+
+.closeButton{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    height: 35px;
+    width: 35px;
+    cursor: pointer;
+    border: none;
+    color: #3B5998;
+    text-align: center;
+    border-radius: 2rem;
+}
+
+.closeButton svg{
+    font-size: 18px;
+    margin: 5px auto;
+}

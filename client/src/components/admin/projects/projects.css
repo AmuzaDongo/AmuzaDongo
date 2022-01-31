@@ -1,0 +1,55 @@
+.project{
+    padding: 20px;
+    width: 100%;
+}
+
+.project-card{
+    border-radius: 15px !important;
+    background-color: transparent !important;
+    border: none !important;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    background-color: #FFFFFF !important;
+    padding: 30px;
+    position: relative;
+    width: 100%;
+}
+
+.project-card .back{
+    float: right;
+}
+
+.project-card .link{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    color: #00ACED;
+    width: 30px;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 50px;
+    float: right;
+    top: 5px;
+    right: 20px;
+    padding-bottom: 20px;
+    margin-left: 5px;
+}
+
+.table{
+    border: none;
+    width: 100%;
+}
+
+.project-card .tabledata{
+    font-family: 'varela', sans-serif !important;
+    font-size: 14px !important;
+    font-weight: 300 !important;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.project-card .table-data .table-img{
+    width: 45px !important;
+    height: 45px !important;
+    border-radius: 50px;
+}

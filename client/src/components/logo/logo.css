@@ -1,0 +1,36 @@
+.logo {
+    line-height: 100px;
+    color: #fff;
+    font-size: 24px;
+    float: left;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+  }
+  
+  .logo img {
+    width: 45px;
+    height: 45px;
+    object-fit: cover;
+    border-radius: 50%;
+    transition: 0.3s;
+    -ms-interpolation-mode: bicubic;
+    border: 0;
+    overflow: hidden;
+  }
+    
+    .header-area .main-nav .logo span {
+        font-size: 25px;
+        font-weight: 500;
+        padding-left: 8px;
+        color: #737A84;
+        letter-spacing: -0.5px;
+        font-family:'varela', sans-serif;
+        line-height: 100px;
+        float: right;
+        -webkit-transition: all 0.3s ease 0s;
+        -moz-transition: all 0.3s ease 0s;
+        -o-transition: all 0.3s ease 0s;
+        transition: all 0.3s ease 0s;
+    }

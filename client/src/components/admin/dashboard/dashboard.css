@@ -1,0 +1,434 @@
+
+.dashboard{
+    width: 100%;
+    background-color: #EAEDFF;
+    padding: 10px;
+}
+
+.earning{
+    min-height: 235px;
+    max-height: 235px;
+    background-color: #6A29E5 !important;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px !important;
+}
+
+.earning:hover,
+.ranking:hover,
+.my-projects .body-card:hover,
+.invoice .body-card:hover,
+.engage-card:hover{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
+    rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+
+.d-heading{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.d-heading span{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.d-heading span svg{
+    color: #fff;
+    font-size: 50px;
+    font-weight: 500;
+}
+
+.d-heading h4{
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'varela', sans-serif;
+}
+
+.amout{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.amout span:first-child{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: 'varela',sans-serif;
+    line-height: 18px;
+    margin-bottom: 8px;
+}
+
+.amout span:last-child{
+    background-color: #5521B9;
+    border-radius: 30px;
+    color: #fff;
+    padding: 5px 10px;
+    font-size: 12px;
+    font-family: 'varela',sans-serif;
+}
+
+.ranking{
+    background-color: #FFFFFF !important;
+    min-height: 235px;
+    max-height: 235px;
+    padding: 15px;
+    width: 100%;
+    border-radius: 15px !important;
+    position: relative;
+}
+
+.rank{
+    display: flex;
+    background-color: #EAEDFC;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-radius: 15px;
+}
+
+.rank div{
+ padding: 15px;
+ display: flex;
+ flex-direction: column;
+}
+
+.rank div:first-child span{
+    width: 35px;
+    height: 35px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #6928E3;
+    padding: 5px;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 8px;
+    margin-right: 2px;
+    font-weight: 500;
+    font-family: 'varela', sans-serif;
+}
+
+.rank div:last-child span:first-child{
+    color: #000;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: 'varela', sans-serif;
+}
+
+.rank div:last-child span:last-child{
+    color: #959595;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 12px;
+    font-family: 'varela', sans-serif;
+}
+
+
+.project_counter{
+    display: flex;
+    background-color: #EAEDFC;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-radius: 15px;
+    margin-top: 10px;
+}
+
+.project_counter div{
+ padding: 15px;
+ display: flex;
+ flex-direction: column;
+}
+
+.project_counter div:first-child span{
+    width: 35px;
+    height: 35px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #6928E3;
+    padding: 5px;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 8px;
+    margin-right: 2px;
+    font-weight: 500;
+    font-family: 'varela', sans-serif;
+}
+
+.project_counter .p span:first-child{
+    color: #000;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: 'varela', sans-serif;
+}
+
+.project_counter .p span:last-child{
+    color: #959595;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 12px;
+    font-family: 'varela', sans-serif;
+}
+
+.project_counter .p-type{
+    display: inline-block !important;
+    flex-wrap: wrap !important;
+    justify-content: center;
+    
+}
+
+.project_counter .p-type span{
+    font-size: 12px;
+    background-color: #D3DAFC;
+    border-radius: 15px;
+    color: #8F97BA;
+    padding: 5px 10px;
+    margin-right: 5px;
+}
+
+.my-projects{
+    background-color: transparent !important;
+    border: none !important;
+}
+
+.my-projects .card-title{
+    padding-bottom: 12px;
+    font-size: 16px;
+    font-family: 'varele', sans-serif;
+    font-weight: 700;
+}
+
+.my-projects .body-card{
+    display: flex;
+    background: #FFFFFF !important;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 15px;
+}
+
+.my-projects .project{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    align-items: center;
+}
+
+.my-projects .project img{
+    width: 55px;
+    height: 55px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.my-projects .project .p-title{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    padding: 0px 10px;
+}
+
+.my-projects .project h4{
+   font-size: 15px;
+   font-family: 'varela', sans-serif;
+   font-weight: 700;
+   cursor: pointer;
+   transition: 0.5s all ease;
+}
+
+.my-projects .project h4:hover{
+    color: #6A29E5;
+    transition: 0.5s all ease;
+ }
+
+.my-projects .project .deadline{
+    color: #959595;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 12px;
+    font-family: 'varela', sans-serif
+}
+
+.more{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: right;
+    align-items: flex-end;
+    padding: 10px;
+}
+
+.more .link{
+    color: #6A29E5;
+    font-weight: 500;
+    font-size: 12px;
+    padding: 3px 10px;
+    transition: 0.5s all ease;
+}
+
+.more .link:hover{
+    color: #000;
+    background-color: #EAEDFC;
+    transition: 0.5s all ease;
+    border-radius: 15px;
+}
+
+/* invoice */
+
+.invoice{
+    background-color: transparent !important;
+    border: none !important;
+}
+
+.invoice .card-title{
+    padding-bottom: 12px;
+    font-size: 16px;
+    font-family: 'varele', sans-serif;
+    font-weight: 700;
+}
+
+.invoice .body-card{
+    display: flex;
+    background: #FFFFFF !important;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 15px;
+}
+
+.invoice .invoices{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    align-items: center;
+}
+
+.invoice .image{
+    flex: 1;
+}
+
+.invoice .invoices img{
+    width: 45px;
+    height: 45px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.invoice .invoices .invoice-title{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    padding: 0px 10px;
+    flex: 4;
+}
+
+.invoice .invoices h4{
+   font-size: 15px;
+   font-family: 'varela', sans-serif;
+   font-weight: 700;
+   cursor: pointer;
+   transition: 0.5s all ease;
+}
+
+.invoice .invoices h4:hover{
+    color: #6A29E5;
+    transition: 0.5s all ease;
+}
+
+.invoice .invoices .deadline{
+    color: #959595;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 10px;
+    font-family: 'varela', sans-serif
+}
+
+.paid, .pending{
+    justify-content: right;
+    align-items: right;
+    font-size: 12px;
+    font-family: 'varela', sans-serif;
+    font-weight: 300;
+    flex: 2;
+}
+
+.paid span{
+    padding: 5px 10px;
+    background-color: #D8E9BB;
+    color: #8AAE50;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.pending span{
+    padding: 5px 10px;
+    background-color: #F7D9D7;
+    color: #DC968C;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.amount-paid-pending{
+    flex: 2;
+    font-size: 12px;
+    font-weight: 500;
+    font-family: 'varela', sans-serif;
+}
+
+.engage-card{
+    background-color: #13234D !important;
+    border: none !important;
+    border-radius: 15px !important;
+    margin-top: 25px;
+}
+
+.engage{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-items: center;
+    margin-left: 0px;
+    padding: 10px 10px;
+    color: #fff;
+}
+
+.engage span{
+    flex: 1;
+}
+
+.engage .header{
+    font-size: 16px;
+    font-weight: 600;
+    font-family: 'varela', sans-serif;
+    line-height: 18px;
+    justify-content: left;
+    align-items: center;
+    flex: 3;
+    padding-top: 8px;
+}
+
+.engage .header p{
+    font-size: 12px;
+    font-weight: 300;
+    font-family: 'varela', sans-serif;
+    line-height: 10px;
+    margin-top: 5px;
+    color: #959595;
+}
+
+.engage .link{
+    background-color: #6125DD;
+    padding: 10px;
+    border-radius: 8px;
+    transition: 0.5s all ease;
+}
+
+.engage .link:hover{
+    color: #959595;
+    transition: 0.5s all ease;
+}

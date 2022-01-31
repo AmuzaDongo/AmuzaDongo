@@ -1,0 +1,36 @@
+.footer span {
+    text-align: center;
+    color: #737A84;
+  }
+
+.footerWrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.copyRight{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family:'lora', serif;
+    padding: 15px 0;
+}
+
+.dashboardfooter{
+    background: linear-gradient(to bottom right, white 0%right, #e6e4ff 70%);
+    box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.06);
+    position: relative;
+    margin-top: 3rem;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    align-items: center;
+    font-family: 'varela', sans-serif;
+    z-index: 100;
+    -webkit-transition: all .5s ease 0s;
+    -moz-transition: all .5s ease 0s;
+    -o-transition: all .5s ease 0s;
+    transition: all .5s ease 0s;
+}

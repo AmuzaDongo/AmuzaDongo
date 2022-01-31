@@ -1,0 +1,9 @@
+.posts{
+    padding: 60px 0;
+    display: block;
+}
+
+.main-post{
+    display: flex;
+    flex-wrap: wrap;
+}
