@@ -1,5 +1,9 @@
 import React, { useContext,useState } from 'react'
+<<<<<<< HEAD
 import {axiosInstance} from "../../../config";
+=======
+import axios from "axios";
+>>>>>>> dd42d3b (edited back end code)
 import { ButtonGroup, Card, CardGroup, Container, Form, FormGroup, FormLabel, FormSelect, InputGroup, Row } from 'react-bootstrap'
 import { AiFillCloseCircle, AiFillFileAdd } from 'react-icons/ai'
 import './invoice.css'
@@ -45,12 +49,21 @@ export default function Addinvoice({ showModal, setShowModal }) {
         data.append("file", file);
         newInvoice.photo = filename;
         try {
+<<<<<<< HEAD
             await axiosInstance.post("/upload", data);
         } catch (err) {}
         }
         try {
         const res = await axiosInstance.post("/invoices", newInvoice);
         res.data && window.location.replace("/invoice");
+=======
+            await axios.post(`${process.env.REACT_APP_API}/uppload`, data);
+        } catch (err) {}
+        }
+        try {
+            const res = await axios.post(`${process.env.REACT_APP_API}/invoices`, newInvoice);
+            res.data && window.location.replace("/invoice");
+>>>>>>> dd42d3b (edited back end code)
         } catch (err) {}
     };
     const modalRef = useRef();

@@ -1,6 +1,10 @@
 import { useContext, useState,useRef } from "react";
 import "./write.css";
+<<<<<<< HEAD
 import axiosInstance from "../../../config";
+=======
+import axios from "axios";
+>>>>>>> dd42d3b (edited back end code)
 import { Context } from "../../../context/Context";
 import { Card, Container, Row } from "react-bootstrap";
 import { useSpring, animated } from 'react-spring';
@@ -28,11 +32,19 @@ export default function Write({ showModal, setShowModal }) {
       data.append("file", file);
       newPost.photo = filename;
       try {
+<<<<<<< HEAD
         await axiosInstance.post("/upload", data);
       } catch (err) {}
     }
     try {
       const res = await axiosInstance.post("/posts", newPost);
+=======
+        await axios.post(`${process.env.REACT_APP_API}/upload`, data);
+      } catch (err) {}
+    }
+    try {
+      const res = await axios.get(`${process.env.REACT_APP_API}/posts`, newPost);
+>>>>>>> dd42d3b (edited back end code)
       res.data && window.location.replace("/blog");
     } catch (err) {}
   };

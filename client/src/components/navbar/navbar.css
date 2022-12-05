@@ -1,5 +1,9 @@
 .navbar-area {
+<<<<<<< HEAD
   position: sticky;
+=======
+  position: sticky !important;
+>>>>>>> dd42d3b (edited back end code)
   top: 0px;
   left: 0px;
   right: 0px;

@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 import axiosInstance from "../../../config";
+=======
+>>>>>>> dd42d3b (edited back end code)
 import { useContext,useEffect, useState } from "react";
 import { Container, Row } from "react-bootstrap";
 import { AiOutlineEdit } from "react-icons/ai";
@@ -8,13 +11,21 @@ import { Link } from "react-scroll";
 import { Context } from "../../../context/Context";
 import Dashboardfooter from "../../footer/Dashboardfooter";
 import TopBar from "../topbar/TopBar";
+<<<<<<< HEAD
+=======
+import axios from "axios";
+>>>>>>> dd42d3b (edited back end code)
 import "./blogs.css";
 
 export default function Editblog() {
     const location = useLocation();
     const path = location.pathname.split("/")[2];
     const [post, setPost] = useState({});
+<<<<<<< HEAD
     const PF = "https://dongoamuza.herokuapp.com/api/images/";
+=======
+    const PF = `${process.env.REACT_APP_API}/images/`;
+>>>>>>> dd42d3b (edited back end code)
     const { user } = useContext(Context);
     const [title, setTitle] = useState("");
     const [desc, setDesc] = useState("");
@@ -23,7 +34,11 @@ export default function Editblog() {
 
     useEffect(() => {
         const getPost = async () => {
+<<<<<<< HEAD
           const res = await axiosInstance.get("/posts/" + path);
+=======
+          const res = await axios.get(`${process.env.REACT_APP_API}/posts`+ path);
+>>>>>>> dd42d3b (edited back end code)
           setPost(res.data);
         };
         getPost();
@@ -31,7 +46,11 @@ export default function Editblog() {
 
       const handleDelete = async () => {
         try {
+<<<<<<< HEAD
           await axiosInstance.delete(`/posts/${post._id}`, {
+=======
+            await axios.delete(`${process.env.REACT_APP_API}/posts/${post._id}`, {
+>>>>>>> dd42d3b (edited back end code)
             data: { username: user.username },
           });
           window.location.replace("/");
@@ -40,7 +59,11 @@ export default function Editblog() {
     
       const handleUpdate = async () => {
         try {
+<<<<<<< HEAD
           await axiosInstance.put(`/posts/${post._id}`, {
+=======
+            await axios.delete(`${process.env.REACT_APP_API}/posts/${post._id}`, {
+>>>>>>> dd42d3b (edited back end code)
             username: user.username,
             title,
             desc,

@@ -4,6 +4,10 @@
 /node_modules
 /.pnp
 .pnp.js
+<<<<<<< HEAD
+=======
+.env
+>>>>>>> dd42d3b (edited back end code)
 
 # testing
 /coverage

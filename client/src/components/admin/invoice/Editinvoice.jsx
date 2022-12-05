@@ -1,5 +1,9 @@
 import React, { useContext,useState } from 'react'
+<<<<<<< HEAD
 import {axiosInstance} from "../../../config";
+=======
+import axios from 'axios'
+>>>>>>> dd42d3b (edited back end code)
 import { ButtonGroup, Card, CardGroup, Col, Container, Form, FormGroup, FormLabel, FormSelect, InputGroup, Row } from 'react-bootstrap'
 import { AiFillCloseCircle, AiFillFileAdd } from 'react-icons/ai'
 import { Link } from 'react-router-dom'

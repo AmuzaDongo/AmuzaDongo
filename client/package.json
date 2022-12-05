@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD
   "name": "react-blog",
+=======
+  "name": "dongoamuza",
+>>>>>>> dd42d3b (edited back end code)
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -14,6 +18,10 @@
     "react-bootstrap": "^2.0.0-rc.1",
     "react-dom": "^17.0.2",
     "react-hook-form": "^7.17.5",
+<<<<<<< HEAD
+=======
+    "react-hot-toast": "^2.4.0",
+>>>>>>> dd42d3b (edited back end code)
     "react-icons": "^4.3.1",
     "react-modal": "^3.14.3",
     "react-router-dom": "^5.2.0",
@@ -48,5 +56,28 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+<<<<<<< HEAD
   }
+=======
+  },
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "main": "index.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/AmuzaDongo/dongoamuza.git"
+  },
+  "keywords": [
+    "Dongo",
+    "Amuza",
+    "Portfolio",
+    "Page"
+  ],
+  "author": "Dongo Amuza",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AmuzaDongo/dongoamuza/issues"
+  },
+  "homepage": "https://github.com/AmuzaDongo/dongoamuza#readme"
+>>>>>>> dd42d3b (edited back end code)
 }
