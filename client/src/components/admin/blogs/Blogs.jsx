@@ -1,10 +1,6 @@
 import React, { useEffect, useState } from "react";
-<<<<<<< HEAD
-import axiosInstance from "../../../config";
-=======
 import axios from "axios";
 import { Toast } from "react-hot-toast";
->>>>>>> dd42d3b (edited back end code)
 import { Card, Col, Container, Row } from 'react-bootstrap';
 import { FaArrowCircleLeft, FaEye, FaPlusCircle, FaTrashAlt } from 'react-icons/fa';
 import { Link } from "react-router-dom";
@@ -18,11 +14,7 @@ import { AiOutlineEdit } from "react-icons/ai";
 import Write from "../write/Write";
 
 export default function Blogs() {
-<<<<<<< HEAD
-    const PF = "https://dongoamuza.herokuapp.com/api/images/";
-=======
     const PF = `${process.env.REACT_APP_API}/images/`;
->>>>>>> dd42d3b (edited back end code)
     const pageSize = 5;
     const [posts, setPosts] = useState();
     const [paginatedPosts, setpaginatedPosts] = useState();
@@ -36,11 +28,7 @@ export default function Blogs() {
     useEffect(() => {
         
         const fetchPosts = async () =>{
-<<<<<<< HEAD
-            const res = await axiosInstance.get("/posts");
-=======
             const res = await axios.get(`${process.env.REACT_APP_API}/posts`);
->>>>>>> dd42d3b (edited back end code)
             setPosts(res.data);
             setpaginatedPosts(_(res.data).slice(0).take(pageSize).value())
         }
@@ -49,11 +37,7 @@ export default function Blogs() {
 
     const handleDelete = async () => {
         try {
-<<<<<<< HEAD
-            const res = await axiosInstance.delete(`/posts/${paginatedPosts._id}`);
-=======
             const res = await axios.delete(`${process.env.REACT_APP_API}/posts/${paginatedPosts._id}`);
->>>>>>> dd42d3b (edited back end code)
             res.data && window.location.replace("/blog")
         } catch (err) {}
     };

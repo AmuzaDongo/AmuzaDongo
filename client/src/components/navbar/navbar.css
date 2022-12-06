@@ -1,9 +1,5 @@
 .navbar-area {
-<<<<<<< HEAD
-  position: sticky;
-=======
   position: sticky !important;
->>>>>>> dd42d3b (edited back end code)
   top: 0px;
   left: 0px;
   right: 0px;
@@ -279,7 +275,8 @@
 .linkbtn{
     background-color: #23262C;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-    padding: 8px 18px;
+    color: #fff;
+    padding: 8px 28px;
     border-radius: 30px;
     transition: all 1.5s;
     cursor: pointer;
@@ -289,6 +286,12 @@
     padding: 8px 18px;
     color: white !important;
     transition: all 1.5s;
+}
+
+.navbar-toggler {
+  background-color: rgba(7, 7, 7, 0.548) !important;
+  color: #fff;
+  margin-right: 10px;
 }
   
   
@@ -377,6 +380,10 @@
       right: 25px;
       font-size: 14px;
       top: 15px;
+    }
+
+    .linkbtn{
+      margin: 20px;
     }
   }
   

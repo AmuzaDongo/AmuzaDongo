@@ -1,5 +1,5 @@
 .login{
-    top: 20%;
+    top: 35%;
     right: 20px;
     position: absolute;
     z-index: 999;
@@ -49,7 +49,7 @@
 .loginButton{
     margin-top: 10px;
     cursor: pointer;
-    background-color: #00ACED;
+    background-color: #24262B;
     border: none;
     color: white;
     border-radius: 10px;
@@ -69,7 +69,7 @@
     width: 35px;
     cursor: pointer;
     border: none;
-    color: #3B5998;
+    color: #24262B;
     text-align: center;
     border-radius: 2rem;
 }

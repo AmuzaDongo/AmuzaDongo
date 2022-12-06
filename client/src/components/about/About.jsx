@@ -5,12 +5,7 @@ import React, {useState, useEffect} from 'react';
 import "./about.css"
 
 export default function About() {
-
-<<<<<<< HEAD
-    const [scrollNav, setScrollNav] = useState(false)
-=======
     const [scrollnav, setScrollNav] = useState(false)
->>>>>>> dd42d3b (edited back end code)
     const changeNav = ()=>{
         if (window.scrollY >= 80) {
             setScrollNav(true)
@@ -51,11 +46,7 @@ export default function About() {
                                     years of related experience.
                                 </p>
                             </div>
-<<<<<<< HEAD
-                            <Link scrollNav={scrollNav} to="contact">
-=======
                             <Link scrollNav={scrollnav} to="contact">
->>>>>>> dd42d3b (edited back end code)
                                 <Button type="button" className="btn download-cvBtn">Dowload My CV <FaDownload /></Button>
                             </Link>
                         </div>

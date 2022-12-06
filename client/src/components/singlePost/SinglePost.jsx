@@ -7,17 +7,10 @@ export default function SinglePost() {
     const location = useLocation();
     const path = location.pathname.split("/")[2];
     const [post, setPost] = useState({});
-<<<<<<< HEAD
-    const PF = "https://dongoamuza.herokuapp.com/api/images/";
-    useEffect(() => {
-        const getPost = async () => {
-          const res = await axios.get("/posts/" + path);
-=======
     const PF = `${process.env.REACT_APP_API}/images/`;
     useEffect(() => {
         const getPost = async () => {
           const res = await axios.get(`${process.env.REACT_APP_API}/posts` + path);
->>>>>>> dd42d3b (edited back end code)
           setPost(res.data);
         };
         getPost();

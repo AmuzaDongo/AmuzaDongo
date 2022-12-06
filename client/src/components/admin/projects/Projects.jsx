@@ -1,9 +1,5 @@
 import React, { useEffect, useState } from 'react';
-<<<<<<< HEAD
-import axiosInstance from '../../../config';
-=======
 import axios from 'axios';
->>>>>>> dd42d3b (edited back end code)
 import { Card, Col, Container, Row } from 'react-bootstrap';
 import { FaArrowCircleLeft, FaPlusCircle } from 'react-icons/fa';
 import { Link } from "react-router-dom";
@@ -15,21 +11,13 @@ import FormCheckInput from 'react-bootstrap/esm/FormCheckInput';
 import Addprojectcard from './addprojectcard/Addprojectcard';
 
 export default function Projects() {
-<<<<<<< HEAD
-    const PF = "https://dongoamuza.herokuapp.com/api/images/";
-=======
     const PF = `${process.env.REACT_APP_API}/images/`;
->>>>>>> dd42d3b (edited back end code)
     const [posts, setPosts] = useState();
 
     useEffect(() => {
         
         const fetchPosts = async () =>{
-<<<<<<< HEAD
-            const res = await axiosInstance.get("/posts")
-=======
             const res = await axios.get(`${process.env.REACT_APP_API}/posts`);
->>>>>>> dd42d3b (edited back end code)
             setPosts(res.data)
         }
         fetchPosts();

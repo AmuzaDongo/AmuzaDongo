@@ -1,10 +1,7 @@
 .footer span {
     text-align: center;
     color: #737A84;
-<<<<<<< HEAD
-=======
     z-index: 999;
->>>>>>> dd42d3b (edited back end code)
   }
 
 .footerWrapper{
@@ -22,15 +19,11 @@
     padding: 15px 0;
 }
 
-<<<<<<< HEAD
-=======
 .footer p {
     text-align: center;
     color: rgb(115, 122, 132);
     margin: 30px 0px 45px;
 }
-
->>>>>>> dd42d3b (edited back end code)
 .dashboardfooter{
     background: linear-gradient(to bottom right, white 0%right, #e6e4ff 70%);
     box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.06);

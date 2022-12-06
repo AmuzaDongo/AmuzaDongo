@@ -1,23 +1,17 @@
-<<<<<<< HEAD
-import axiosInstance from "../../config";
-=======
->>>>>>> dd42d3b (edited back end code)
-import { useRef, useContext } from "react";
+import { useRef, useContext, useState } from "react";
 import { AiFillCloseCircle } from "react-icons/ai";
 import { Context } from "../../context/Context";
 import { useSpring, animated } from 'react-spring';
-<<<<<<< HEAD
-=======
 import axios from "axios";
-// import toast from "react-hot-toast";
->>>>>>> dd42d3b (edited back end code)
+import toast, { Toaster } from "react-hot-toast";
 import "./login.css"
 import { Container } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 export default function Login({ showModal, setShowModal }) {
     const userRef = useRef()
     const passwordRef = useRef();
-    const { user, dispatch, isFetching } = useContext(Context)
+    const { user, isFetching } = useContext(Context)
     const modalRef = useRef();
     const animation = useSpring({
         config: {
@@ -32,27 +26,22 @@ export default function Login({ showModal, setShowModal }) {
             setShowModal(false)
         }
     }
-
     const handleSubmit = async (e) =>{
         e.preventDefault();
-        dispatch({type:"LOGIN_START"});
         try {
-<<<<<<< HEAD
-            const res = await axiosInstance.post("/auth/login", {
-                username: userRef.current.value,
-                password: passwordRef.current.value,
-            })
-            dispatch({type:"LOGIN_SUCCESS", payload:res.data});
-=======
-            await axios.post(`${process.env.REACT_APP_API}/login`, {
+            const { data } = await axios.post(`${process.env.REACT_APP_API}/users/login`, {
                 email: userRef.current.value,
                 password: passwordRef.current.value,
-            })
-            // dispatch({type:"LOGIN_SUCCESS", payload:res.data});
-            dispatch({type:"LOGIN_SUCCESS"});
->>>>>>> dd42d3b (edited back end code)
+            });
+            console.log(data)
+            if (data?.error) {
+                toast.error(data.error);
+            }else{
+                toast.success("Login successful");
+            }
         } catch (error) {
-            dispatch({type:"LOGIN_FAILURE"});
+            console.log(error);
+            toast.error("Login failed. Try again.");
         }
     };
 
@@ -65,13 +54,8 @@ export default function Login({ showModal, setShowModal }) {
                         <div className="login-bg" >
                             <span className="loginTitle">Login</span>
                             <form className="loginForm" onSubmit={handleSubmit}>
-<<<<<<< HEAD
-                                <label>Username</label>
-                                <input type="text" className="loginInput" placeholder="Enter your username"
-=======
                                 <label>Email</label>
                                 <input type="email" className="loginInput" placeholder="Enter your username"
->>>>>>> dd42d3b (edited back end code)
                                     ref={userRef}
                                 />
                                 <label>Password</label>
@@ -84,10 +68,16 @@ export default function Login({ showModal, setShowModal }) {
                                 <span aria-label='Close modal'
                                 onClick={() => setShowModal(prev => !prev)}><AiFillCloseCircle /></span>
                             </button>
+                            <div className="row">
+                                <div className="col-12 p-2">
+                                    <span>Have no account! <Link className="link text-info" to="/register">Register</Link></span>
+                                </div>
+                            </div>
                         </div>
                     </animated.div>
                 ): null}
             </div>
+            <Toaster />
         </Container>
     )
 }

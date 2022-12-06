@@ -9,7 +9,7 @@ export default function Header() {
                     <Col md={12}>
                         <div className="headerTitles">
                             <span className="headerTitleLg">Dongo Amuza</span>
-                            <p className="headerTitleSm">I am a software engineer, full-stack developer working comfortable with node js, express js, php, laravel, react js, next js, vue js, nuxt js, angular, and flutter</p>
+                            <p className="headerTitleSm">I am a software engineer, Full-stack developer with experience in Node.js, Express.js, Ruby on Rails, Flutter, Reactjs, Vue, Next.js, Nuxt.js, PHP, and Laravel.</p>
                         </div>
                     </Col>
                 </Row>

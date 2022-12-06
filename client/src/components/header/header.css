@@ -14,13 +14,13 @@
 
 .headerTitleSm{
     margin: 25px 0;
-    color: #737A84;
+    color: #fff;
     font-family: 'Josefin', sans-serif;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 20px;
     line-height: 30px;
-    width: 60%;
+    width: 45%;
 }
 
 .headerTitleLg{
@@ -73,13 +73,21 @@
 }
 
 @media (max-width: 767px) {
+    .headerTitles{
+        top: 10%;
+    }
     .headerTitleLg{
-        font-size: 60px;
+        font-size: 45px;
         font-weight: 700;
     }
 
     .headerTitleSm{
-        font-size: 25px;
+        font-size: 20px;
+        color: #737A84;
         width: 90%;
+    }
+
+    .headerImg{
+        height: 450px;
     }
 }

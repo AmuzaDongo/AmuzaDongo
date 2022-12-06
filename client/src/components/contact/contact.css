@@ -167,8 +167,8 @@ form#contact button:hover {
 
 @media (max-width: 767px) {
   .contact-header h2{
-    font-size: 50px;
-    line-height: 50px;
+    font-size: 35px;
+    line-height: 35px;
   }
 
   .contact-header span{

@@ -39,7 +39,7 @@ export default function Contact() {
                             <div className="phone-info">
                                 <div><span><FaPhone className="media"/></span>&nbsp; <Link to="#" className="link">+256788346788</Link></div>
                                 <div><span><FaEnvelope className="media"/></span>&nbsp; <Link to="#" className="link">dongoamuza@gmail.com</Link></div>
-                                <div><span><FaMapMarker className="media"/></span>&nbsp; <Link to="#" className="link">Nansana</Link></div>
+                                <div><span><FaMapMarker className="media"/></span>&nbsp; <Link to="#" className="link">Kiwatule</Link></div>
                             </div>
                         </div>
                     </Col>

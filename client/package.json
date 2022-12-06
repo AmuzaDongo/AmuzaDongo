@@ -60,9 +60,5 @@
     "Page"
   ],
   "author": "Dongo Amuza",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/AmuzaDongo/dongoamuza/issues"
-  },
-  "homepage": "https://github.com/AmuzaDongo/dongoamuza#readme"
+  "license": "ISC"
 }
