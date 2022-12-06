@@ -1,4 +1,4 @@
-import { useRef, useContext, useState } from "react";
+import { useRef, useContext } from "react";
 import { AiFillCloseCircle } from "react-icons/ai";
 import { Context } from "../../context/Context";
 import { useSpring, animated } from 'react-spring';
